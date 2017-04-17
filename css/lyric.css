@@ -1,0 +1,136 @@
+@import url("common.css");
+@font-face {font-family: "iconfont";
+          src: url('../icon/iconfont.eot'); /* IE9*/
+          src: url('../icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../icon/iconfont.woff') format('woff'), /* chrome, firefox */
+          url('../icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('../icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+.icon{
+	font-family:iconfont;
+}
+html{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	background-image:url(../img/changge.jpg);
+	background-position:center center;
+}
+body{
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background:rgba(59,45,10,0.7);
+}
+header{
+	width:100%;
+	height:0.88rem;
+	overflow:hidden;
+}
+nav{
+	width:100%;
+	background:rgba(59,45,10,.9);
+	height:0.88rem;
+	/*line-height:0.88rem;*/
+	padding:0.15rem 0.24rem 0;
+	box-sizing:border-box;
+	display:flex;
+	justify-content:space-between;
+	position:absolute;
+	top:0;
+	left:0;
+	color:#FFFFFD;
+	font-size:0.4rem;
+}
+nav a:first-child span{
+	font-size:0.5rem;
+	font-family:宋体;
+	color:#FFFFFD;
+}
+nav a:last-child span{
+	font-size:0.4rem;
+	color:#FFFFFD;
+}
+nav > div > p:first-child{
+	font-size:0.4rem;
+	letter-spacing:0.07rem;
+	height:0.35rem;
+	margin-bottom:0.1rem;
+}
+article{
+	width:100%;
+	height:auto;
+	margin:0.4rem 0 3rem;
+	text-align:center;
+	color:#BDBABA;
+}
+article > span{
+	display:block;
+	margin:0.1rem 0;
+	font-size:0.35rem;
+}
+footer{
+	width:100%;
+	height:auto;
+	padding:0 0.24rem;
+	background:rgba(59,45,10,.9);
+	box-sizing:border-box;
+	justify-content:space-between;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+footer span{
+/*	height:100%;*/
+/*	line-height:0.98rem;*/
+	color:#DBE3E3;
+	font-size:0.4rem;
+}
+.time{
+	margin-top:0.3rem;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:0 0.48rem;
+	box-sizing:border-box;
+	color:#636260;
+	font-size:0.8rem;
+}
+.time > span:first-child{
+
+	display:block;
+	float:left;
+}
+.time > span:nth-child(2){
+	display:block;
+	float:right;
+}
+.time > div.time-ago{
+	width:100%;
+	height:1px;
+	float:left;
+	margin:0.3rem 0;
+}
+.time > div.time-ago > div{
+	width:100%;
+	height:1px;
+	box-sizing:border-box;
+	padding:0 5%;
+	background:#937427;
+}
+.time > div.tubiao{
+	width:40%;
+	height:auto;
+	margin:0 1.8rem;
+	float:left;
+	display:flex;
+	justify-content:space-around;
+}
+.footer{
+	width:100%;
+	height:auto;
+	display:flex;
+	margin:0.2rem 0;
+	justify-content:space-around;
+}
