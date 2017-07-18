@@ -1,0 +1,118 @@
+body{
+	font-family: "微软雅黑";
+	color: #eee;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+p{
+	text-indent: 2em;
+}
+h1,h2,h3{
+	text-shadow: 0 0 2px #000;
+}
+/*以下--各部分布局及背景*/
+#home{
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+#about,#portfolio,#contact{
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+#aboutcontainer,#portfoliocontainer,#contactcontainer{
+	background-color: rgba(0,0,0,0.4);
+	color: #eee;
+}
+#aboutcontainer{
+	background: linear-gradient(transparent,rgba(0,0,0,0.4));
+}
+#bottombar{
+	background-color: rgba(0,0,0,0.6);
+}
+/*以下--各部分详细声明*/
+#home h3{
+	padding-bottom: 20px;
+	border-bottom: 2px solid #555;
+	margin-bottom: 10px;
+}
+#home .btn{
+	margin: 20px 5px 20px 5px;
+}
+#about *{
+	line-height: 2em;
+}
+#portfolio h3{
+	margin-bottom: 2%;
+}
+#bottombar div{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#bottombar p{
+	font-size: 12px;
+	color: #ccc;
+	text-indent: 0;
+}
+/*以下--各项目样式声明*/
+.thumbnail{
+	background-color: transparent;
+	border: 1px solid #888;
+	border-radius: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+.thumbnail:hover{
+	border-color: #000;
+	box-shadow: 3px 3px 5px #222;
+	transition: 0.5s;
+}
+.caption{
+	background-color: rgba(0,0,0,0.4);
+	color: #eee !important;
+}
+.caption h5,.caption h6{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 1.2;
+	margin: 7px 0;
+}
+/*以下--按钮通用样式*/
+.btn,.btn:focus{
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	transition: 0.5s;
+	font-weight: 300;
+}
+.btn:hover{
+	box-shadow: 3px 3px 5px #222;
+	transition: 0.5s;
+	background-color: #f77;
+	color: #fff;
+}
+/*以下--顶部导航栏样式*/
+.navbar{
+	background-color: rgba(0,0,0,0.2);
+	border: none;
+}
+.navbar.changebg{
+	background-color: #000;
+}
+.navbar a{
+	color: #fff !important;
+	font-weight: bold;
+}
+.nav a.active{
+	background-color: rgba(255,255,255,0.3) !important;
+}
+:focus,
+:active:focus,
+.active:focus,
+.focus,
+:active.focus,
+.active.focus {
+    outline: none !important;          
+}

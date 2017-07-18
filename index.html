@@ -1,126 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-   	<link rel="stylesheet" href="css/index.css" />
-   	<script src="js/index.js"></script>
+	<title>ZhangCui's Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/loading.css">
+	<link rel="stylesheet" type="text/css" href="styles/animate.css">
+	<link rel="icon" href="images/icon.ico">
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/sonic.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/loading.js"></script>
+	<script type="text/javascript" src="scripts/wow.js"></script>
+	<script src="https://use.fontawesome.com/8ae039c8aa.js" async></script>
 </head>
 <body>
-	<main>
-		<header>
-			<nav class="one">
-				<a href="person.html"><span class="icon iconfont">&#xe63b;</span></a>
-				<a href="">我的音乐</a>
-				<a href=""><span class="icon iconfont">&#xe67e;</span></a>
-			</nav>
-			<nav class="two">
-				<a href="">歌曲</a>
-				<a href="singer.html">歌手</a>
-				<a href="">专辑</a>
-				<a href="">文件夹</a>
-			</nav>
-		</header>
-	</main>
-	<main>
-		<ul class="list">
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="icon iconfont">&#xe669;</span>
-					<p>丁香花</p>
-					<p>唐磊</p>
-				</a>
-			</li>
-		</ul>
-	</main>
-	<footer>
-		<a href="lyric.html">
-			<div></div>
-			<p>后来</p>
-			<p>刘若英</p>
-		</a>	
-		<a href=""><span class="icon iconfont">&#xe6e1;</span></a>	
-		<a href=""><span class="icon iconfont">&#xe61d;</span></a>	
-		<a href=""><span class="icon iconfont">&#xe718;</span></a>	
-		<a href=""><span class="icon iconfont">&#xe62d;</span></a>	
-	</footer>
+<!-- loading界面开始 -->
+<!-- loading界面需要loading.css/loading.js/sonic.js -->
+	<div class="loading text-center">
+		<div class="text-center" id="canvascontainer"></div>
+		<h6 class="text-center dot">加载背景图，首次加载较慢</h6>
+		<button class="btn btn-default btn-lg animated bounceInDown">"没背景就没背景吧"</button>
+	</div>
+<!-- loading界面结束 -->
+<!-- 导航栏开始 -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		    <div class="container">
+			    <div class="navbar-header navbar-left">
+			    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnav-navbar-collapse">
+			    		<span class="sr-only">切换导航</span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			    	</button>
+			        <a class="navbar-brand" href="#">QianYongHui</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="topnav-navbar-collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			            <li><a href="#home" class="active">Home</a></li>
+				        <li><a href="#about">About</a></li>
+				        <li><a href="#portfolio">Portfolio</a></li>
+				        <li><a href="#contact">Contact</a></li>
+			        </ul>
+			    </div>
+		    </div>
+	</nav>
+<!-- 导航栏结束 -->
+<!-- Home开始 -->
+	<div class="container-fluid" id="homecontainer">
+		<div id="home" class="container animated wow zoomIn">
+			<h1 class="text-center">QianYongHui 钱永慧</h1>
+			<h3 class="text-center">I wanna try even though I could fail.</h3>
+			<ul class="list-inline text-center">
+	            <li>
+	                <a href="https://github.com/qqjunhui" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a>
+	            </li>
+	        </ul>
+		</div>
+	</div>
+<!-- Home结束 -->
+<!-- About开始 -->
+	<div class="container-fluid" id="aboutcontainer">
+		<div id="about" class="container">
+			<div class="row animated wow zoomIn">
+				<div class="col-md-7 col-md-offset-1">
+					<h2>钱永慧</h2>
+					<p>在大学的时候有一门课程叫web，经过一个学期的学习做了一个网页，顿时很有成就感。便深入了解之后毅然决然的进入了前端这个行业。也许会有挫折，也许会有痛苦，但既然选择了远方，便只顾风雨兼程。</p>
+					<h3>目前掌握技术</h3>
+					<ul>
+						<li>对HTML,CSS布局熟练精通，会JavaScript原生代码，了解最新的ES6等新语言</li>
+						<li>对当下主流的插件可以熟练的使用（swiper，hammer，iscroll，fullpage，lazyjs）</li>
+						<li>熟悉ajax工作方式</li>
+						<li>用当下热门的响应式bootstrap框架做过项目</li>
+						<li>移动端的三种布局（rem,百分比，flex弹性布局）</li>
+						<li>掌握了PHP后台语言，有过个人和团队的整站开发</li>
+						<li>熟悉一些框架angularjs，nodejs，Vuejs</li>
+						<li>对UI工作和后台工作流程了解熟悉，可以对工作很快上手</li>
+						<li>希望能找到一个合适的工作，给自己一个继续发展的机会。</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle img-responsive" src="images/mypic.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- About结束 -->
+<!-- Portfolio开始 -->
+	<div class="container-fluid" id="portfoliocontainer">
+		<div id="portfolio" class="container animated">
+			<h2 class="text-center">个人项目</h2>
+			<h3 class="text-center">近期主要的工作内容</h3>
+			<div class="row wow zoomIn">
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://htmlpreview.github.io/?https://github.com/qqjunhui/baidu/blob/master/baidu.html" target="_blank" title="访问该项目"><img data-src="images/img5.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>fullpage插件(练习)</h5>
+							<h6>HTML/CSS/JavaScript/jQuery/fullpage/vilidate</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="#home" title="访问该项目"><img data-src="images/img6.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>个人主页</h5>
+							<h6>Bootstrap/jQuery</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://htmlpreview.github.io/?https://github.com/respose/res/blob/master/index.html" target="_blank" title="访问该项目"><img data-src="images/img7.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>企业站</h5>
+							<h6>Bootstrap/jQuery/sass</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://htmlpreview.github.io/?https://github.com/qqjunhui/puke/blob/master/puke.html" target="_blank" title="访问该项目"><img data-src="images/img8.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>小游戏 十三点相加（运气好能全消哦！）</h5>
+							<h6>js/jquery/css</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/food-uek/food/master/html/h-main.html" target="_blank" title="访问该项目"><img data-src="images/img9.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>食神居静态APP</h5>
+							<h6>CSS/JavaScript/jQuery/移动端布局/各种插件</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://zhangcuizc.github.io/loading-dots/" target="_blank" title="访问该项目"><img data-src="images/img10.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>text-shadow实现loading点点点效果</h5>
+							<h6>CSS</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://zhangcuizc.github.io/My-FreeCodeCamp/" target="_blank" title="访问该项目"><img data-src="images/img11.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>Wiki搜索</h5>
+							<h6>JSON/jQuery/AJAX</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://github.com/zhangcuiZC/My-FreeCodeCamp/tree/master/twitch" target="_blank" title="访问该项目"><img data-src="images/img12.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>twitch直播DOTA2频道搜索</h5>
+							<h6>JSON/jQuery/AJAX</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="https://github.com/zhangcuiZC/My-FreeCodeCamp/tree/master/calculator" target="_blank" title="访问该项目"><img data-src="images/img13.jpg" alt="" src="images/img-placeholder.jpg"></a>
+						<div class="caption text-center">
+							<h5>计算器</h5>
+							<h6>jQuery/JavaScript</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Portfolio结束 -->
+<!-- Contact开始 -->
+	<div class="container-fluid" id="contactcontainer">
+		<div id="contact" class="container">
+			<div class="row wow zoomIn">
+				<div class="col-md-7 col-md-offset-1">
+					<h2>欢迎与我联系！</h2>
+					<h3><i class="fa fa-qq"></i>&nbsp;&nbsp;1105953814</h3>
+					<h3><i class="fa fa-envelope"></i>&nbsp;&nbsp;18435105810@163.com</h3>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<a href="https://github.com/qqjunhui" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a><br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Contact结束 -->
+	<div class="container-fluid" id="bottombar">
+		<div class="container">
+			<p><a href="#home">Home</a>&nbsp;-&nbsp;<a href="#about">About</a>&nbsp;-&nbsp;<a href="#portfolio">Portfolio</a>&nbsp;-&nbsp;<a href="#contact">Contact</a></p>
+			<p>Copyright &copy; QYH. All Rights Reserved</p>
+		</div>
+	</div>
 </body>
 </html>
